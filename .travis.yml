@@ -7,4 +7,4 @@ services:
     - docker build -t itamarb1/docker-react1 -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true itamarb1/docker-react1 npm run test
+  - winpty docker run -e CI=true itamarb1/docker-react1 npm run test
